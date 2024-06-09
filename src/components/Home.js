@@ -1,9 +1,12 @@
 import React from 'react';
 import '../styles/Home.css';
+import Navbar from '../components/Navbar'
 
 const Homepage = () => {
   return (
+
     <div className="homepage">
+    <Navbar />
       <main className="main-content">
         <div className="header-line">Heart of Robotics at R-Land</div>
         <h2>
