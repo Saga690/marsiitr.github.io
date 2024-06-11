@@ -6,7 +6,7 @@ const Homepage = () => {
   return (
 
     <div className="homepage">
-    <Navbar />
+        <Navbar />
       <main className="main-content">
         <div className="header-line">Heart of Robotics at R-Land</div>
         <h2>
