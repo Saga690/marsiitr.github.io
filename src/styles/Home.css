@@ -33,6 +33,15 @@
   .main-content p {
     margin-top: 20px;
   }
+
+  h4 {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1.2;
+    background: linear-gradient(90deg, #548CE3, #624BCD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
   
   .header-line {
     box-shadow: 2px 4px 8px #D632A1;
@@ -73,15 +82,94 @@
   
   @media screen and (max-width: 768px) {
     .homepage {
-      padding: 0 6px; /* Adjust padding for smaller screens */
+      padding: 0 6px; 
     }
   
     .main-content {
-      font-size: 16px; /* Decrease font size for smaller screens */
+      font-size: 16px; 
     }
   
     .main-content h2 {
-      font-size: 32px; /* Decrease heading size for smaller screens */
+      font-size: 32px; 
     }
   }
+
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 20px;
+  }
+  
+  .card {
+    background: rgba(40, 40, 43, 0.30);
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    width: 20%;
+    min-width: 250px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 0 20px 8px rgba(248, 103, 219, 0.2);
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .card h3 {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  
+  .card p {
+    margin-top: 10px;
+    line-height: 1.5;
+  }
+  
+  .electronics-title {
+    background: linear-gradient(90deg, #A69AF8, #999EED);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .aiml-title {
+    background: linear-gradient(90deg, #E7B2DF, #D79CCE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .mechanical-title {
+    background: linear-gradient(90deg, #8D10FF, #6B40FA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .robotics-title {
+    background: linear-gradient(90deg, #ed99d1, #9C22AA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .marketing-title {
+    background: linear-gradient(90deg, #A69AF8, #999EED);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  @media screen and (min-width:768px) {
+    #mobile{
+        display: none;
+        
+    }
+  }
+
+  
+  
   
