@@ -29,19 +29,19 @@ const cardsData = [
   },
   {
     title: 'Marketing',
-    image: 'robotics.avif',
+    image: 'marketing.jpg',
     description: 'The Marketing team promotes our projects and events. Members develop strategies for competitions, outreach, manage social media, and create promotional materials, enhancing their skills in communication, branding, and public relations.',
     titleClass: 'marketing-title'
   },
   {
     title: 'Web Development',
-    image: 'robotics.avif',
+    image: 'webdev.jpg',
     description: 'The Web Development team focuses on creating and maintaining our online presence. Members design and develop the club website, manage content, and ensure seamless user experience, honing their skills in web technologies and digital communication.',
     titleClass: 'robotics-title'
   },
   {
     title: 'Design',
-    image: 'robotics.avif',
+    image: 'design.jpg',
     description: 'The Design Team focuses on creating visual content for promotional and presentation purposes. Members work on graphic design, branding, and multimedia, ensuring our projects are effectively showcased and visually appealing.',
     titleClass: 'robotics-title'
   }
