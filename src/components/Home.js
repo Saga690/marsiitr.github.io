@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Home.css';
 import Navbar from '../components/Navbar'
+import Model from './Model/model'
 
 const cardsData = [
   {
@@ -51,15 +52,25 @@ const Homepage = () => {
   return (
     <div className="homepage">
       <Navbar />
+
       <main className="main-content">
-        <div className="header-line">Heart of Robotics at R-Land</div>
-        <h2>
-          <span className="gradient-text">Models</span> and 
-          <span className="gradient-text"> Robotics</span> Section, IIT Roorkee
-        </h2>
-        <p>We're a student group, bonded by our passion for Robotics. Delving into programming, electronics, and AI through projects and workshops.</p>
-        <button>Our Team</button>
+
+        <div className="left">
+          <div className="header-line">Heart of Robotics at R-Land</div>
+          <h2>
+            <span className="gradient-text">Models</span> and
+            <span className="gradient-text"> Robotics</span> Section, IIT Roorkee
+          </h2>
+          <p>We're a student group, bonded by our passion for Robotics. Delving into programming, electronics, and AI through projects and workshops.</p>
+          <button>Our Team</button>
+        </div>
+
+        <div className="right">
+          <Model />
+        </div>
+
       </main>
+
       <br />
       <h4>Our Verticals</h4>
       <div className="cards-container">
@@ -71,6 +82,7 @@ const Homepage = () => {
           </div>
         ))}
       </div>
+
     </div>
   );
 };

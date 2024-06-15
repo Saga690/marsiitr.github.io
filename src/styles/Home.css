@@ -18,10 +18,18 @@
     font-weight: 400;
     line-height: 1.6;
     color: aliceblue;
-    max-width: 600px;
     width: 100%; 
     padding: 20px; 
+    display: flex;
+    min-height: 500px;
+    justify-content: space-evenly;
+    align-items: center;
   }
+
+  .left {
+    max-width: 600px;
+  }
+
   
   .main-content h2 {
     font-size: 40px;
