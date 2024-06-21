@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/Home.css';
 import Navbar from '../components/Navbar'
 import Model from './Model/model'
+import Console from './Console/Console.js'
 
 const cardsData = [
   {
@@ -48,7 +49,7 @@ const cardsData = [
   }
 ];
 
-const Homepage = () => {
+const Homepage = (props) => {
   return (
     <div className="homepage">
       <Navbar />
@@ -65,11 +66,15 @@ const Homepage = () => {
           <button>Our Team</button>
         </div>
 
-        <div className="right">
+        {/* <div className="right">
           <Model />
-        </div>
+        </div> */}
 
       </main>
+
+      <div>
+        <Console display={props.display} setDisplay={props.setDisplay} />
+      </div>
 
       <br />
       <h4>Our Verticals</h4>

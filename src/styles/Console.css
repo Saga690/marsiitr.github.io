@@ -1,0 +1,203 @@
+.console {
+    margin-top: 2rem;
+    width: 700px;
+    height: 88vh;
+    /* min-height: 25rem; */
+    background-color: transparent;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Kode Mono" !important;
+    font-weight: 400 !important;
+
+    /*position: relative;*/
+    /*mix-blend-mode: color-dodge;*/
+}
+
+.console-header {
+    height: 10px !important;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    /*padding-left: 10px;*/
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    padding: 0.5rem 0.7rem;
+    /*background: white;*/
+    /*mix-blend-mode: screen;*/
+}
+
+.console-header div {
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+    /*border-radius: 6px;*/
+    margin: 9px 6px;
+
+}
+
+.red-dot {
+    background-color: red;
+}
+
+.yellow-dot {
+    background-color: #FFBE00;
+}
+
+.green-dot {
+    background-color: #00DB47;
+}
+
+.console-footer {
+    height: 1px;
+    /*display: flex;*/
+    /*color: white;*/
+    /*font-size: 13px;*/
+    /*line-height: 30px;*/
+    background: transparent;
+    border-bottom: 1px solid white;
+}
+
+
+.footer-0 {
+    width: 4.3%;
+    background-color: #AE4570;
+    border-bottom-left-radius: 16px;
+    text-align: center;
+}
+
+.footer-zsh {
+    width: 58%;
+    background-color: #3D65D3;
+}
+
+.footer-zsh span {
+    margin-left: 15px;
+}
+
+
+.footer-100 {
+    width: 9%;
+    background-color: #0A1704;
+    text-align: center;
+
+}
+
+.footer-user {
+    width: 28.7%;
+    background-color: #AE4570;
+    border-bottom-right-radius: 16px;
+}
+
+.footer-user span {
+    margin-left: 15px;
+}
+
+.console-body {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+    /*margin-top: 20px;*/
+
+}
+
+.console-text {
+    font-size: 0.95rem;
+    margin-left: 1rem;
+    line-height: 25px;
+}
+
+.input-div {
+    color: #08F600;
+    font-family: "Kode Mono" !important;
+    font-weight: 700;
+    margin-left: 1rem;
+}
+
+.input-div p {
+    line-height: 30px;
+}
+
+
+.console-input {
+    margin-left: 5px;
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
+    color: #08F600;
+    /*font-weight: 400;*/
+    width: 300px;
+    caret-color: transparent;
+    font-family: "Kode Mono" !important;
+    transform: translateY(1px);
+    /*font-weight: 700;*/
+}
+
+.console-input:focus {
+    border: none;
+    outline: none;
+}
+
+.console-arrow {
+    font-family: "Kode Mono" !important;
+    font-weight: 700;
+    font-size: 17px;
+    transform: translateY(-2px);
+    display: inline-block;
+    color: #F45AED;
+
+}
+
+.input-cursor {
+    display: inline-block;
+    height: 19px;
+    width: 10px;
+    background-color: #08F600;
+    transform: translate(-250px, 1.3px);
+    animation: blinking 1s infinite;
+    /*transform: translateX(-20px);*/
+}
+
+@keyframes blinking {
+    0% {
+        background-color: transparent;
+    }
+    47% {
+        color: #08F600;
+    }
+    62% {
+        color: transparent;
+    }
+    97% {
+        color: transparent;
+    }
+    100% {
+        color: #08F600;
+    }
+}
+
+.console-img{
+    margin-left: 1rem;
+    margin-top: 5px;
+    height: 200px;
+}
+
+
+.socials{
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 2rem;
+    margin-left: 1rem;
+    mix-blend-mode: exclusion;
+    cursor: pointer;
+}
+
+.socials img:hover{
+    opacity: 0.8;
+}
+.socials .linkedin{
+    transform: scale(1.1);
+}
