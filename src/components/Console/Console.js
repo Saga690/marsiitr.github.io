@@ -296,7 +296,7 @@ const Console = (props) => {
         {/* <div className="console-footer">
         </div> */}
 
-        <hr className="body-end" />
+        {/* <hr className="body-end" /> */}
 
         <div className={"socials"}>
             <img src={discord} alt="" onClick={() => openSocial('discord')} />

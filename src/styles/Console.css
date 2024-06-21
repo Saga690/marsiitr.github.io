@@ -1,5 +1,5 @@
 .console {
-    margin-top: 2rem;
+    margin-top: -15px;
     width: 70vw;
     height: 78vh;
     /* min-height: 25rem; */
@@ -10,6 +10,8 @@
     justify-content: space-between;
     font-family: "Kode Mono" !important;
     font-weight: 400 !important;
+    letter-spacing: 1px;
+
 
     /*position: relative;*/
     /*mix-blend-mode: color-dodge;*/
@@ -19,10 +21,12 @@
     height: 18px !important;
     background-color: #070212;
     display: flex;
+    margin: 0px -15px;
+    border-radius: 10px 10px 0px 0px;
     align-items: center;
     /*padding-left: 10px;*/
-    /* border-bottom: 1px solid white;
-    border-top: 1px solid white; */
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
     padding: 0.5rem 0.7rem;
     /*background: white;*/
     /* mix-blend-mode: screen; */
@@ -63,7 +67,7 @@
     font-size: 0.95rem;
     margin-left: 1.25rem;
     line-height: 20px;
-    letter-spacing: 0.5px;
+    /* letter-spacing: 1px; */
 }
 
 .input-div {
@@ -114,7 +118,7 @@
     background-color: #08F600;
     transform: translate(-250px, 1.3px);
     animation: blinking 1s infinite;
-    /*transform: translateX(-20px);*/
+    /* transform: translateX(-20px); */
 }
 
 @keyframes blinking {

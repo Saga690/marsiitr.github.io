@@ -13,11 +13,11 @@ export const imageToo = ['hello', 'kill', 'cd projects', 'cd gallery', 'cd conta
 export let consoleData = {
     '0': [],
     'about': [{
-        'text': "> We are a bunch of students united by our passion for innovation", 'color': '#A1E3B6'
+        'text': "> Models and Robotics Section, a.k.a MaRS, is a group open for all Robotics enthusiasts", 'color': '#A1E3B6'
     },
-        {'text': "and technology, driving the Models and Robotics Club forward. ", 'color': "#A1E3B6"},
-        {'text': "With hands-on projects and collaborative learning, we explore", 'color': "#A1E3B6"},
-        {'text': "the fascinating realms of robotics and modeling.", 'color': "#A1E3B6"}
+        {'text': "at the Indian Institute Of Technology, Roorkee. We provide a perfect platform ", 'color': "#A1E3B6"},
+        {'text': "for students to develop innovative and technical skills such as mechanical, electronics,", 'color': "#A1E3B6"},
+        {'text': "autonomous navigation, and architecture to create things that simplify life.", 'color': "#A1E3B6"}
     ],
     'help': [{
         'text': '> Type “commands” into the terminal and hit enter to', 'color': '#A1E3B6'
