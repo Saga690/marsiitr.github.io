@@ -72,7 +72,7 @@ const Homepage = (props) => {
 
       </main>
 
-      <div>
+      <div className='homepage-console'>
         <Console display={props.display} setDisplay={props.setDisplay} />
       </div>
 

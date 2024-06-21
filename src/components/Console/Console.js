@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import "../../styles/Console.css"
 import rick from './assets/hello.gif'
 import dying from './assets/dying.gif'
@@ -8,7 +8,6 @@ import linkedin from './assets/linkedin.svg'
 import discord from './assets/discord.svg'
 import lazy from "./assets/lazy.jpeg"
 import click2 from "./assets/click-2.wav"
-import click from "./assets/click.wav"
 
 import { validCommands } from "./console-data";
 import { imageToo } from "./console-data";
@@ -163,7 +162,7 @@ const Console = (props) => {
     const [inputValue, setInputValue] = useState('');
 
     function inputChange(event) {
-        if (parseInt(event.target.value.length) <= 20) {
+        if (parseInt(event.target.value.length) <= 30) {
             setInputValue(event.target.value);
             playAudio();
         }
@@ -282,26 +281,28 @@ const Console = (props) => {
 
                 <div className="text-div"></div>
                 <div className="input-div">
-                    <span>pi@raspberrypi ~$ </span>
+                    <span>mars@raspberrypi ~$ </span>
                     {/*<span className="console-arrow">❯</span>*/}
                     <input type="text" value={inputValue} autoFocus
-                           onChange={inputChange} className="console-input"
-                           autoCapitalize='off' autoComplete='off' autoCorrect='off'
-                           onFocus={startBlinking} onBlur={stopBlinking}
-                           onKeyDown={handleEnter}/>
+                        onChange={inputChange} className="console-input"
+                        autoCapitalize='off' autoComplete='off' autoCorrect='off'
+                        onFocus={startBlinking} onBlur={stopBlinking}
+                        onKeyDown={handleEnter} />
                     <span className="input-cursor"></span>
                 </div>
             </div>
         </div>
 
-        <div className="console-footer">
-        </div>
+        {/* <div className="console-footer">
+        </div> */}
+
+        <hr className="body-end" />
 
         <div className={"socials"}>
-            <img src={insta} alt="" onClick={() => openSocial('insta')}/>
-            <img src={youtube} alt="" onClick={() => openSocial('youtube')}/>
-            <img src={discord} alt="" onClick={() => openSocial('discord')}/>
-            <img src={linkedin} alt="" className={"linkedin"} onClick={() => openSocial('linkedin')}/>
+            <img src={discord} alt="" onClick={() => openSocial('discord')} />
+            <img src={youtube} alt="" onClick={() => openSocial('youtube')} />
+            <img src={linkedin} alt="" onClick={() => openSocial('linkedin')} />
+            <img src={insta} alt="" onClick={() => openSocial('insta')} />
         </div>
 
     </div>)
