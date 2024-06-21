@@ -185,7 +185,7 @@ const Console = (props) => {
 
     useEffect(() => {
         const cursor = document.querySelector('.input-cursor');
-        let text = -300 + 10.3 * parseInt(inputValue.length);
+        let text = -300 + 8.2 * parseInt(inputValue.length);
         cursor.style.transform = "translate(" + text + "px, 2px)"
 
     }, [inputValue])
