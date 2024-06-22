@@ -95,6 +95,21 @@ button:hover {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+.homepage-console-head {
+  /* box-shadow: 2px #D632A1; */
+  box-shadow: #6d0f50 0px 1px 3px 3px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  font-size: 17px;
+  color: whitesmoke;
+  background-color: transparent;
+  border: 2px solid gray;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-top: -25px;
+}
+
 
 
 @media screen and (max-width: 768px) {
