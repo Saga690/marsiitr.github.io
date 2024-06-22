@@ -72,8 +72,10 @@ const Homepage = (props) => {
 
       </main>
 
-      <div className='homepage-console-head'>
-        Linux Guys, Have Some Fun!
+      <div className='homepage-console-head-container'>
+        <div className='homepage-console-head'>
+          Linux Guys, Have Some Fun!
+        </div>
       </div>
       <div className='homepage-console'>
         <Console display={props.display} setDisplay={props.setDisplay} />
