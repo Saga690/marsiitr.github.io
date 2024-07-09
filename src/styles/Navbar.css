@@ -7,7 +7,7 @@
 }
 
 .container {
-    width: 92%;
+    width: 70vw;
     display: flex;
     justify-content: space-between;
     background:transparent; 

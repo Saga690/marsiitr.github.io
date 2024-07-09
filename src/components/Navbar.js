@@ -28,7 +28,7 @@ class Navbar extends Component {
               <li className="item"><a href="#" className="c">Home</a></li>
               <li className="item"><a href="#" className="c">Projects</a></li>
               <li className="item"><a href="#" className="c">Gallery</a></li>
-              <li className="item"><a href="#" className="c">Contact</a></li>
+              <li className="item"><a href="#" className="c">Teams</a></li>
               <li><div className='search-box'>Blogs</div></li>
             </ul>
             {/* <div className="hamburgmenu">
