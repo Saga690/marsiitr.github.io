@@ -1,8 +1,8 @@
 import React from 'react';
 import '../styles/Home.css';
 import Navbar from '../components/Navbar'
-import Model from './Model/model'
 import Console from './Console/Console.js'
+import ParticlesComponent from './particles.js';
 
 const cardsData = [
   {
@@ -52,6 +52,7 @@ const cardsData = [
 const Homepage = (props) => {
   return (
     <div className="homepage">
+      <ParticlesComponent id="tsparticles" />
       <Navbar />
 
       <main className="main-content">
@@ -73,9 +74,6 @@ const Homepage = (props) => {
       </main>
 
       <div className='homepage-console-head-container'>
-        <div className='homepage-console-head'>
-          Linux Guys, Have Some Fun!
-        </div>
       </div>
       <div className='homepage-console'>
         <Console display={props.display} setDisplay={props.setDisplay} />
