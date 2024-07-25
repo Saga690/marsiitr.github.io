@@ -1,12 +1,6 @@
 import React, { Component } from 'react'
 import '../styles/Navbar.css'
-//import logo_1 from '../../public/models_and_robotics_section_iit_roorkee_logo-removebg-preview.png'
-// import {GiHamburgerMenu} from "react-icons/gi";
-
-// import React from 'react'
-
-
-
+import Teams from '../components/Teams' 
 
 class Navbar extends Component {
   // const[showMediaIcons,setShowMediaIcons]= useState(false);
@@ -14,8 +8,11 @@ class Navbar extends Component {
   handleClick = () => {
     this.setState({ clicked: !this.state.clicked })
   }
-  render() {
+ 
+  render(){
+    
     return (
+     
       <div className='navbar'>
         <div className="container">
           <div className='Left'>
@@ -28,7 +25,7 @@ class Navbar extends Component {
               <li className="item"><a href="#" className="c">Home</a></li>
               <li className="item"><a href="#" className="c">Projects</a></li>
               <li className="item"><a href="#" className="c">Gallery</a></li>
-              <li className="item"><a href="#" className="c">Teams</a></li>
+              <li className="item c" > <Teams/></li>
               <li><div className='search-box'>Blogs</div></li>
             </ul>
             {/* <div className="hamburgmenu">
@@ -45,6 +42,7 @@ class Navbar extends Component {
       </div>
 
     )
+    
   }
 }
 export default Navbar
