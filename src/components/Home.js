@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/Home.css';
 import Navbar from '../components/Navbar'
 import Console from './Console/Console.js'
+// import Model from './Model/model'
 import ParticlesComponent from './particles.js';
 
 const cardsData = [
@@ -74,6 +75,9 @@ const Homepage = (props) => {
       </main>
 
       <div className='homepage-console-head-container'>
+        <div className='homepage-console-head'>
+        Enter commands, ignite robots!
+        </div>
       </div>
       <div className='homepage-console'>
         <Console display={props.display} setDisplay={props.setDisplay} />
