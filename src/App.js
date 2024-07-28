@@ -1,6 +1,7 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Homepage from './components/Home';
-import {useState} from "react";
+import { useState } from "react";
 
 
 function App() {
@@ -8,9 +9,13 @@ function App() {
   const [display, setDisplay] = useState(['about', 'help']);
 
   return (
-    <div className="App">
-      <Homepage display={display} setDisplay={setDisplay} />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Homepage display={display} setDisplay={setDisplay} />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
