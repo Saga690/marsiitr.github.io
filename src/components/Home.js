@@ -86,7 +86,7 @@ const Homepage = (props) => {
       <br />
       <h4>Our Verticals</h4>
       <div className="cards-container">
-        {cardsData.map((card, index) => (
+        {cardsData.map((card, index)=>(
           <div className="card" key={index}>
             <img src={card.image} alt={card.title} />
             <h3 className={card.titleClass}>{card.title}</h3>

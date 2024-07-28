@@ -1,0 +1,134 @@
+:root {
+    background: linear-gradient(90deg, #100322, #350758, #430D4E);
+  }
+
+.Teams{
+  margin-top: 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* .gradient-text {
+  background: linear-gradient(90deg, #D933A1, #9C22AA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+.Heading{
+  margin-top: 10px;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 1.2;
+  background: linear-gradient(90deg, #548CE3, #624BCD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.Members{
+  max-width: 90vw;
+   padding: 20px 15px 20px 10px;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 25px;
+   padding: 20px;
+
+   
+}
+
+.cards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  flex-wrap: wrap;
+  margin: 10px;
+  width: 20%;
+  min-width: 250px;
+  border: 2px solid #9C22AA ;
+}
+
+.card img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h4{
+    padding: 0px;
+}
+
+.dropdown{
+  /* position: relative;
+  width: 200px; */
+  user-select: none;
+}
+
+.dropdown .dropdown-btn{
+  /* color: #548CE3; */
+  cursor: pointer;
+}
+
+.dropdown .verticals{
+  /* width: 100%; */
+  margin-top: 10px;
+  color: #dbd7d5;
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2px;
+  gap: 6px;
+  /* box-shadow: 2px 4px 8px #D632A1; */
+  box-shadow: 5px 5px 9px  #D632A1;
+  border-radius: 10px;
+}
+
+.verticals:hover{
+  /* color: #FFFFFF; */
+  text-decoration: none;
+  
+}
+
+.dropdown .verticals .item{
+/* color: #D632A1; */
+cursor: pointer;
+}
+
+option :hover{
+  color: red;
+}
+
+/* .item options:hover{
+  color: #FFFFFF;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
