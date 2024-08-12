@@ -4,6 +4,7 @@
     height: 78vh;
     /* min-height: 25rem; */
     background-color: transparent;
+    /* background-color: black; */
     border-radius: 16px;
     display: flex;
     flex-direction: column;
@@ -66,7 +67,7 @@
 .console-text {
     font-size: 0.95rem;
     margin-left: 1.25rem;
-    line-height: 20px;
+    /* line-height: 20px; */
     /* letter-spacing: 1px; */
 }
 
@@ -78,7 +79,7 @@
 }
 
 .input-div p {
-    line-height: 30px;
+    /* line-height: 30px; */
 }
 
 

@@ -1,35 +1,48 @@
 .navbar {
+    position: fixed; 
+    top: 0;
+    left: 0; 
     width: 100%;
     height: 92px;
     display: flex;
     justify-content: center;
     background: transparent;
+    z-index: 1000;
+}
+
+body {
+    margin-top: 92px; 
 }
 
 .container {
     width: 70vw;
     display: flex;
     justify-content: space-between;
-    background:transparent; 
+    background: transparent;
     padding: 15px 12%;
-   
- }
- .c{
-     color: #dbd7d5;
-     text-decoration: none;
- }
- .Left{
-     display: flex;
-     align-items: center;
-     color: #FFFFFF;
- }
- .Left h1{
+
+}
+
+.c {
+    color: #dbd7d5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.Left {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.Left h1 {
     color: white;
 }
 
 .Left .logo {
     width: 40px;
-    height: auto; 
+    height: auto;
     margin-right: 7px;
 }
 
@@ -48,7 +61,6 @@
 
 .c:hover {
     color: #FFFFFF;
-    text-decoration-line: underline;
 }
 
 /* .hamburg-menu{
@@ -120,6 +132,10 @@
     background: white;
     padding: 5px 15px;
     border-radius: 10px;
+}
+
+.search-box:hover {
+    background-color: #dbd7d5;
 }
 
 .Right {

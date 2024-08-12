@@ -1,0 +1,115 @@
+:root {
+    background: linear-gradient(90deg, #100322, #350758, #430D4E);
+}
+
+.Teams {
+    margin-top: 5px;
+    margin-bottom: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-items: center;
+}
+
+/* .gradient-text {
+  background: linear-gradient(90deg, #D933A1, #9C22AA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+.Heading {
+    margin-top: 5px;
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 1.2;
+    background: linear-gradient(90deg, #548CE3, #624BCD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.Members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+    /* margin-left: 50px;
+    margin-right: 50px; */
+    max-width: 82vw;
+}
+
+.cards {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* align-items: center;
+  justify-content: center; */
+    min-width: 220px;
+    flex-wrap: wrap;
+    margin: 0px;
+    width: 18%;
+    gap: 10px;
+    /* min-width: 250px; */
+    height: 350px;
+    border: 0.5px solid #9C22AA;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.cards img {
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+}
+
+.cards:hover img {
+    filter: none;
+    scale: 1.05;
+}
+
+/* .cards .img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: absolute;
+
+} */
+
+.cards h2 {
+    padding: 0px;
+    position: absolute;
+    padding-top: 300px;
+    margin: 10px;
+    color: white;
+    font: bold;
+
+}
+
+.cards p {
+    padding: 0px;
+    position: absolute;
+    padding-top: 280px;
+    margin: 10px;
+    color: white;
+}
+
+.cards .text {
+    padding: 0px;
+    position: relative;
+}
+
+.line {
+    background-color: rgb(194, 3, 3);
+    width: 2px;
+    height: 10px;
+}
+
+
+.Members img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}

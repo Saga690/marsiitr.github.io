@@ -185,7 +185,7 @@ const Console = (props) => {
 
     useEffect(() => {
         const cursor = document.querySelector('.input-cursor');
-        let text = -300 + 8.2 * parseInt(inputValue.length);
+        let text = -300 + 9.0 * parseInt(inputValue.length);
         cursor.style.transform = "translate(" + text + "px, 2px)"
 
     }, [inputValue])
@@ -218,7 +218,7 @@ const Console = (props) => {
                 new_line.classList.add('console-text');
                 consoleBody.appendChild(new_line);
                 let space = document.createElement('div');
-                space.style.height = '6px';
+                // space.style.height = '6px';
                 space.style.width = '100%';
                 consoleBody.appendChild(space);
                 return;
@@ -237,7 +237,7 @@ const Console = (props) => {
                 if (imageToo.includes(term)) {
                     let img = document.createElement('img');
                     img.classList.add('console-img');
-                    img.style.height = '200px';
+                    // img.style.height = '200px';
                     consoleBody.appendChild(img);
                     if (term === 'hello') img.src = rick;
                     else if (term === 'kill') img.src = dying;
@@ -246,7 +246,7 @@ const Console = (props) => {
 
             })
             let space = document.createElement('div');
-            space.style.height = '40px';
+            // space.style.height = '40px';
             space.style.width = '100%';
             consoleBody.appendChild(space);
         })
