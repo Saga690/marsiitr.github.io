@@ -3,6 +3,7 @@ import '../styles/Home.css';
 import Navbar from '../components/Navbar'
 import Console from './Console/Console.js'
 import ParticlesComponent from './particles.js';
+import Footer from './Footer.js';
 
 const cardsData = [
   {
@@ -90,7 +91,7 @@ const Homepage = (props) => {
           </div>
         ))}
       </div>
-
+        <Footer />
     </div>
   );
 };
