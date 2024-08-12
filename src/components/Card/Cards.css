@@ -61,11 +61,12 @@
 
 .cards img {
     filter: grayscale(100%);
-    transition: filter 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .cards:hover img {
     filter: none;
+    scale: 1.05;
 }
 
 /* .cards .img{
