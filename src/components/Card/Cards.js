@@ -1,6 +1,6 @@
 import React from "react";
 import "./Cards.css";
-import Navbar from "../components/Navbar";
+import Navbar from "../Navbar";
 
 const CardsDetail = [
   {

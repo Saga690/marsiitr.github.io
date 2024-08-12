@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Homepage from "./components/Home";
 import { useState } from "react";
-import Cards from "./Card/Cards";
+import Cards from "./components/Card/Cards";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 
