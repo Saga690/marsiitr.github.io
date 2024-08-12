@@ -101,7 +101,7 @@ function Teams() {
       <Navbar />
       <div className="Teams">
         <div className="Heading">
-          <h4>Our AI/ML Team</h4>
+          <h4>Our Team</h4>
         </div>
         <div className="Members">
           {CardsDetail.map((Card, index) => (
