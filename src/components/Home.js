@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/Home.css';
-import Navbar from '../components/Navbar'
 import Console from './Console/Console.js'
 // import Model from './Model/model'
 import ParticlesComponent from './particles.js';
@@ -54,7 +53,6 @@ const Homepage = (props) => {
   return (
     <div className="homepage">
       <ParticlesComponent id="tsparticles" />
-      <Navbar />
 
       <main className="main-content">
 

@@ -1,9 +1,17 @@
 .navbar {
+    position: fixed; 
+    top: 0;
+    left: 0; 
     width: 100%;
     height: 92px;
     display: flex;
     justify-content: center;
     background: transparent;
+    z-index: 1000;
+}
+
+body {
+    margin-top: 92px; 
 }
 
 .container {

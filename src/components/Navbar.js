@@ -1,12 +1,14 @@
-import React, { Component } from "react";
+import React, { Component, useEffect } from "react";
 import "../styles/Navbar.css";
 
 class Navbar extends Component {
-  // const[showMediaIcons,setShowMediaIcons]= useState(false);
+
   state = { clicked: false };
   handleClick = () => {
     this.setState({ clicked: !this.state.clicked });
   };
+
+  
 
   render() {
     return (

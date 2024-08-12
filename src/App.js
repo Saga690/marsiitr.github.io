@@ -11,19 +11,22 @@ function App() {
   const [display, setDisplay] = useState(["about", "help"]);
 
   return (
-    <Router>
-      <div className="App">
-        <Routes>
-          <Route
-            path="/"
-            element={<Homepage display={display} setDisplay={setDisplay} />}
-          />
-          <Route path="/Teams" element={<Cards />} />
+    <>
+    <Navbar />
+      <Router>
+        <div className="App">
+          <Routes>
+            <Route
+              path="/"
+              element={<Homepage display={display} setDisplay={setDisplay} />}
+            />
+            <Route path="/Teams" element={<Cards />} />
 
-          {/* <Route path="/Home" element={<Home />} /> */}
-        </Routes>
-      </div>
-    </Router>
+            {/* <Route path="/Home" element={<Home />} /> */}
+          </Routes>
+        </div>
+      </Router>
+    </>
   );
 }
 export default App;

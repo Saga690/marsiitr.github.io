@@ -1,6 +1,5 @@
 import React from "react";
 import "./Cards.css";
-import Navbar from "../Navbar";
 
 const CardsDetail = [
   {
@@ -98,7 +97,6 @@ const CardsDetail = [
 function Teams() {
   return (
     <>
-      <Navbar />
       <div className="Teams">
         <div className="Heading">
           <h4>Our Team</h4>
