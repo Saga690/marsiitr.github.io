@@ -3,7 +3,6 @@ import '../styles/Home.css';
 import Console from './Console/Console.js'
 // import Model from './Model/model'
 import ParticlesComponent from './particles.js';
-import Footer from './Footer.js';
 
 const cardsData = [
   {
@@ -93,7 +92,6 @@ const Homepage = (props) => {
           </div>
         ))}
       </div>
-        <Footer />
     </div>
   );
 };

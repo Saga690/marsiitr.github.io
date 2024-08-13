@@ -5,6 +5,7 @@ import Homepage from "./components/Home";
 import { useState } from "react";
 import Cards from "./components/Card/Cards";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Home from "./components/Home";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           </Routes>
         </div>
       </Router>
+      <Footer />
     </>
   );
 }
