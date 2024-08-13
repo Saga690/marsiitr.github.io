@@ -92,6 +92,24 @@ const CardsDetail = [
     por: "xyz",
     titleclass: "Teams-members",
   },
+  {
+    background: "member.jpg",
+    name: "abcd",
+    por: "xyz",
+    titleclass: "Teams-members",
+  },
+  {
+    background: "member.jpg",
+    name: "abcd",
+    por: "xyz",
+    titleclass: "Teams-members",
+  },
+  {
+    background: "member.jpg",
+    name: "abcd",
+    por: "xyz",
+    titleclass: "Teams-members",
+  },
 ];
 
 function Teams() {
@@ -100,6 +118,16 @@ function Teams() {
       <div className="Teams">
         <div className="Heading">
           <h4>Our Team</h4>
+        </div>
+        <div className="verts">
+          <div className="vert-container">
+            <span>AI/ML</span>
+            <span>Electronics</span>
+            <span>Mechanical</span>
+            <span>Web Development</span>
+            <span>Sponsorship</span>
+            <span>Marketing</span>
+          </div>
         </div>
         <div className="Members">
           {CardsDetail.map((Card, index) => (
