@@ -1,5 +1,6 @@
 import React from "react";
 import "./Cards.css";
+import ParticlesComponent from '../particles.js';
 
 const CardsDetail = [
   {
@@ -115,6 +116,7 @@ const CardsDetail = [
 function Teams() {
   return (
     <>
+      <ParticlesComponent id="tsparticles" />
       <div className="Teams">
         <div className="Heading">
           <h4>Our Team</h4>
