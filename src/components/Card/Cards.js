@@ -127,6 +127,8 @@ function Teams() {
             <span>Electronics</span>
             <span>Mechanical</span>
             <span>Web Development</span>
+            <span>Design</span>
+            <span>ROS</span>
             <span>Sponsorship</span>
             <span>Marketing</span>
           </div>
