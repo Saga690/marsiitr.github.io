@@ -12,6 +12,38 @@
     align-items: center;
 }
 
+#tsparticles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.vert-container {
+    background-color: #100322;
+    color: whitesmoke;
+    width: 78vw;
+    padding: 10px 40px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.vert-container span {
+    cursor: pointer;
+    /* background-color: #350758; */
+    padding: 5px 14px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.vert-container span:first-child {
+    background-color: #621272;
+}
+
 /* .gradient-text {
   background: linear-gradient(90deg, #D933A1, #9C22AA);
   -webkit-background-clip: text;
@@ -54,7 +86,7 @@
     gap: 10px;
     /* min-width: 250px; */
     height: 350px;
-    border: 0.5px solid #9C22AA;
+    /* border: 0.5px solid #9C22AA; */
     gap: 5px;
     cursor: pointer;
 }
@@ -62,6 +94,7 @@
 .cards img {
     filter: grayscale(100%);
     transition: all 0.3s ease;
+    border-radius: 0px 10px;
 }
 
 .cards:hover img {
