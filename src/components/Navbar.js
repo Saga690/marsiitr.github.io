@@ -61,6 +61,7 @@ const Navbar = () => {
               <div className="search-box">Blogs</div>
             </li>
           </ul>
+          
         </div>
         <div id="mobile" onClick={handleClick}>
           <a className="hamburg">

@@ -1,8 +1,19 @@
 import React from 'react';
 import '../styles/Home.css';
 import Console from './Console/Console.js'
+import { useState, useRef } from "react";
 // import Model from './Model/model'
 import ParticlesComponent from './particles.js';
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, useGLTF } from "@react-three/drei";
+
+const Model = () => {
+  const { scene } = useGLTF("/robot.glb");
+  const modelRef = useRef();
+
+  return <primitive ref={modelRef} object={scene} scale={[2, 2, 2]} />;
+
+};
 
 const cardsData = [
   {
@@ -69,6 +80,17 @@ const Homepage = (props) => {
         {/* <div className="right">
           <Model />
         </div> */}
+         <div className="canvas-container">
+          <Canvas camera={{ position: [0, 0, 8], fov: 50 }}>
+            <ambientLight intensity={1.5} />
+            <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+            <Model />
+            <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} />
+          </Canvas>
+        </div>
+
+
+
 
       </main>
 

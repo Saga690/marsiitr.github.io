@@ -11,6 +11,7 @@
   align-items: center;
   /* height: 100vh; */
   padding: 0 12px;
+  
 }
 
 #tsparticles {
@@ -214,6 +215,12 @@ button:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.canvas-container {
+  height: 400px;
+  
+}
+
 
 @media screen and (min-width:768px) {
   #mobile {
