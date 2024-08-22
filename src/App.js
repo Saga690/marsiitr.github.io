@@ -7,6 +7,7 @@ import Cards from "./components/Card/Cards";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
+import Gallery from "./components/gallery/Gallery";
 
 function App() {
   const [display, setDisplay] = useState(["about", "help"]);
@@ -22,6 +23,7 @@ function App() {
               element={<Homepage display={display} setDisplay={setDisplay} />}
             />
             <Route path="/Teams" element={<Cards />} />
+            <Route path="/Gallery" element={<Gallery />} />
 
             {/* <Route path="/Home" element={<Home />} /> */}
           </Routes>
