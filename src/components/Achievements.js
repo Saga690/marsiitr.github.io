@@ -1,7 +1,9 @@
-import React from 'react'
+import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { achievements } from './api/achievements';
+import '../styles/Achievements.css'; // Import the new CSS file
+import ParticlesComponent from './particles.js';
 
 const AchievementCard = ({ achievement }) => (
   <VerticalTimelineElement
@@ -10,40 +12,41 @@ const AchievementCard = ({ achievement }) => (
     date={achievement.date}
     iconStyle={{ background: achievement.iconBg }}
     icon={
-      <div className='flex justify-center items-center w-full h-full'>
-        <img src={achievement.icon} alt={achievement.event_name} className='w-[60%] h-[60%] object-contain' />
+      <div className='achievement-icon-container'>
+        <img src={achievement.icon} alt={achievement.event_name} className='achievement-icon' />
       </div>
     }
   >
     <div>
-      <h3 className='text-white text-[24px] font-bold'>{achievement.title}</h3>
-      <p className='text-secondary text-[16px] font-semibold' style={{ margin: 0 }}>{achievement.event_name}</p>
+      <h3 className='achievement-card-title'>{achievement.title}</h3>
+      <p className='achievement-card-event'>{achievement.event_name}</p>
     </div>
-    <ul className='mt-5 list-disc ml-5 space-y-2'>
+    <ul className='achievement-card-points'>
       {achievement.points.map((point, index) => (
-        <li key={`achievement-point-${index}`} className='text-white-100 text-[14px] pl-1 tracking-wider'>
+        <li key={`achievement-point-${index}`} className='achievement-card-point'>
           {point}
         </li>
       ))}
     </ul>
   </VerticalTimelineElement>
-)
+);
 
 const Achievements = () => {
   return (
-    <>
-      <div>
-        <h2 className='text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] mt-[80px]'>Achievements</h2>
+    <div className='achievements-page'>
+      <ParticlesComponent id="tsparticles" />
+      <div className='achievement-main'>
+        <h2 className='achievement-title'>Achievements</h2>
       </div>
-      <div className='mt-20 flex flex-col'>
+      <div className='achievement-list'>
         <VerticalTimeline>
           {achievements.map((achievement, index) => (
             <AchievementCard key={index} achievement={achievement} />
           ))}
         </VerticalTimeline>
       </div>
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default Achievements
+export default Achievements;
