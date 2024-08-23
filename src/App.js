@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Gallery from "./components/gallery/Gallery";
+import Achievements from "./components/Achievements";
 
 function App() {
   const [display, setDisplay] = useState(["about", "help"]);
@@ -24,6 +25,7 @@ function App() {
             />
             <Route path="/Teams" element={<Cards />} />
             <Route path="/Gallery" element={<Gallery />} />
+            <Route path="/achievements" element={<Achievements />} />
 
             {/* <Route path="/Home" element={<Home />} /> */}
           </Routes>
