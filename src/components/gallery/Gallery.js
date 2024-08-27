@@ -4,6 +4,7 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 function Gallery() {
   const images = [
+    "https://media.istockphoto.com/id/485371557/photo/twilight-at-spirit-island.jpg?s=612x612&w=0&k=20&c=FSGliJ4EKFP70Yjpzso0HfRR4WwflC6GKfl4F3Hj7fk=",
     "https://picsum.photos/200/300?image=1050",
     "https://picsum.photos/300/300?image=206",
     "https://picsum.photos/200/300?image=1050",
@@ -12,7 +13,7 @@ function Gallery() {
     "https://picsum.photos/300/300?image=206",
     "https://picsum.photos/200/300?image=1050",
     "https://picsum.photos/300/300?image=206",
-    "https://media.istockphoto.com/id/485371557/photo/twilight-at-spirit-island.jpg?s=612x612&w=0&k=20&c=FSGliJ4EKFP70Yjpzso0HfRR4WwflC6GKfl4F3Hj7fk="
+    "https://earthwatcher.photo.blog/wp-content/uploads/2019/07/grand-tetons-at-twilight-from-schwabachers-landing.jpg"
   ];
   return (
     <div>

@@ -19,8 +19,6 @@ body {
     display: flex;
     justify-content: space-between;
     background: transparent;
-    /* padding: 15px 12%;    */
-
 }
 
 .scrollednav {
@@ -68,31 +66,21 @@ body {
     color: #FFFFFF;
 }
 
-/* .hamburg-menu{
-     display: block;
- 
- } */
-
 @media screen and (min-width:768px) {
     #mobile {
         display: none;
-
     }
 }
 
 @media screen and (max-width:768px) {
     .navbar {
-        display: flex;
-        justify-content: around;
         padding: 10px 3%;
     }
 
     #navbar {
         display: flex;
-        flex-grow: inherit;
         flex-direction: column;
         align-items: flex-start;
-        justify-content: flex-start;
         position: fixed;
         right: -300px;
         top: 92px;
@@ -101,16 +89,11 @@ body {
         background: #2a3239;
         box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
         padding: 15px 0 0 10px;
-
-    }
-
-    .search-box {
-        display: flex;
+        transition: right 0.3s ease;
     }
 
     #navbar.active {
-        right: 0px;
-
+        right: 0;
     }
 
     .Right li {
@@ -121,6 +104,7 @@ body {
         display: block;
         cursor: pointer;
         font-size: 1.7rem;
+        z-index: 1500; /* Higher z-index to ensure visibility */
     }
 
     #mobile i {
@@ -144,6 +128,5 @@ body {
 }
 
 .Right {
-    color: rgb(220, 220, 220)
-        /* #eeeceb; */
+    color: rgb(220, 220, 220);
 }

@@ -1,8 +1,7 @@
-import React, { Component, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/Navbar.css";
 
 const Navbar = () => {
-
   const [clicked, setClicked] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -13,19 +12,13 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(scrollTop > 100);
     };
 
     window.addEventListener("scroll", handleScroll);
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-
 
   return (
     <div className={`navbar ${scrolled ? "scrollednav" : ""}`}>
@@ -35,45 +28,33 @@ const Navbar = () => {
           <h1>MaRS</h1>
         </div>
         <div className="Right">
-          <ul
-            id="navbar"
-            className={clicked ? "#navbar active" : "#navbar"}
-          >
+          <ul id="navbar" className={clicked ? "active" : ""}>
             <li className="item">
-              <a href="/" className="c">
-                Home
-              </a>
+              <a href="/" className="c">Home</a>
             </li>
             <li className="item">
-              <a href="#" className="c">
-                Projects
-              </a>
+              <a href="#" className="c">Projects</a>
             </li>
             <li className="item">
-            <a href="/Gallery" className="c">Gallery</a>
+              <a href="/Gallery" className="c">Gallery</a>
             </li>
-            <li className="item ">
+            <li className="item">
               <a href="/Teams" className="c">Teams</a>
             </li>
-            <li className="item ">
+            <li className="item">
               <a href="/achievements" className="c">Achievements</a>
             </li>
-            <li>
+            {/* <li className="item">
               <div className="search-box">Blogs</div>
-            </li>
+            </li>*/}
           </ul>
-          
         </div>
         <div id="mobile" onClick={handleClick}>
-          <a className="hamburg">
-            <i
-              id="bar"
-              className={clicked ? "fas fa-times" : "fas fa-bars"}
-            ></i>
-          </a>
+          <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>
         </div>
       </div>
     </div>
   );
-}
+};
+
 export default Navbar;

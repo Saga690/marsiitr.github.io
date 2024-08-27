@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Cards.css";
 import ParticlesComponent from '../particles.js';
 
@@ -8,112 +8,72 @@ const CardsDetail = [
     name: "JOE KROOS",
     por: "JOINT SECRETARY",
     titleclass: "Teams-members",
+    vertical: "Electronics",
   },
   {
     background: "memberb.jpg",
     name: "LIZA PERRY",
     por: "MEMBER",
     titleclass: "Teams-members",
+    vertical: "AI/ML",
   },
   {
     background: "membera.jpg",
     name: "HILIE ROSE",
     por: "SECRETARY",
     titleclass: "Teams-members",
+    vertical: "Mechanical",
   },
   {
     background: "memberc.jpg",
     name: "JACK STOINIS",
     por: "MEMBER",
     titleclass: "Teams-members",
+    vertical: "Web Development",
   },
   {
     background: "member4.jpg",
-    name: "JOE ",
+    name: "JOE",
     por: "MEMBER",
     titleclass: "Teams-members",
+    vertical: "Design",
   },
   {
     background: "memberd.jpg",
     name: "HBIB",
     por: "MEMBER",
     titleclass: "Teams-members",
+    vertical: "ROS",
   },
   {
     background: "memberb.jpg",
     name: "LIZA",
     por: "MEMBER",
     titleclass: "Teams-members",
+    vertical: "Sponsorship",
   },
   {
     background: "membera.jpg",
     name: "HEALEY",
     por: "MEMBER",
     titleclass: "Teams-members",
+    vertical: "Marketing",
   },
   {
     background: "memberc.jpg",
     name: "GIGA",
     por: "JOINT SECRETARY",
     titleclass: "Teams-members",
+    vertical: "AI/ML",
   },
-  {
-    background: "member4.jpg",
-    name: "DIAZ",
-    por: "MEMBER",
-    titleclass: "Teams-members",
-  },
-  {
-    background: "membera.jpg",
-    name: "abcd",
-    por: "xyz",
-    titleclass: "Teams-members",
-  },
-  {
-    background: "memberc.jpg",
-    name: "abcd",
-    por: "xyz",
-    titleclass: "Teams-members",
-  },
-  {
-    background: "memberb.jpg",
-    name: "abcd",
-    por: "xyz",
-    titleclass: "Teams-members",
-  },
-  {
-    background: "membera.jpg",
-    name: "abcd",
-    por: "xyz",
-    titleclass: "Teams-members",
-  },
-  {
-    background: "member.jpg",
-    name: "abcd",
-    por: "xyz",
-    titleclass: "Teams-members",
-  },
-  {
-    background: "member.jpg",
-    name: "abcd",
-    por: "xyz",
-    titleclass: "Teams-members",
-  },
-  {
-    background: "member.jpg",
-    name: "abcd",
-    por: "xyz",
-    titleclass: "Teams-members",
-  },
-  {
-    background: "member.jpg",
-    name: "abcd",
-    por: "xyz",
-    titleclass: "Teams-members",
-  },
+  // Add more members as needed...
 ];
 
+const verticals = ["AI/ML", "Electronics", "Mechanical", "Web Development", "Design", "ROS", "Sponsorship", "Marketing"];
+
 function Teams() {
+  const [selectedVertical, setSelectedVertical] = useState(verticals[0]);
+
   return (
     <>
       <ParticlesComponent id="tsparticles" />
@@ -123,31 +83,23 @@ function Teams() {
         </div>
         <div className="verts">
           <div className="vert-container">
-            <span>AI/ML</span>
-            <span>Electronics</span>
-            <span>Mechanical</span>
-            <span>Web Development</span>
-            <span>Design</span>
-            <span>ROS</span>
-            <span>Sponsorship</span>
-            <span>Marketing</span>
+            {verticals.map((vertical, index) => (
+              <span
+                key={index}
+                className={selectedVertical === vertical ? 'active' : ''}
+                onClick={() => setSelectedVertical(vertical)}
+              >
+                {vertical}
+              </span>
+            ))}
           </div>
         </div>
         <div className="Members">
-          {CardsDetail.map((Card, index) => (
+          {CardsDetail.filter(card => card.vertical === selectedVertical).map((Card, index) => (
             <div className="cards" key={index}>
               <img src={Card.background} alt="" />
-              {/* background  ={Card.background} */}
-              {/* <div className="text"> */}
-              {/* {Card.background} =  {CardsDetail.background} */}
-              {/* <div className="text">  */}
               <h2 className={Card.titleclass}>{Card.name}</h2>
-              {/* <div className="line"></div> */}
               <p>{Card.por}</p>
-
-              {/* </div> */}
-
-              {/* </div> */}
             </div>
           ))}
         </div>

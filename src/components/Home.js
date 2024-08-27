@@ -8,7 +8,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
 
 const Model = () => {
-  const { scene } = useGLTF("/robot.glb");
+  const { scene } = useGLTF("/robot2.glb");
   const modelRef = useRef();
 
   return <primitive ref={modelRef} object={scene} scale={[2, 2, 2]} />;
