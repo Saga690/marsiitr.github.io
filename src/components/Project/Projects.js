@@ -37,8 +37,10 @@ export default function FollowingPointerDemo() {
     //       </div>
     //     </div>
     //   </FollowerPointerCard>
-    // </div>)
-    <div class="Project-container">
+    // </div>)<>
+    <>
+    <FollowerPointerCard >
+      <div class="Project-container">
   <div class="follower-pointer-card">
     <div class="Project-relative-card">
       <div class="Project-image-wrapper">
@@ -56,8 +58,9 @@ export default function FollowingPointerDemo() {
       </div>
     </div>
   </div>
-</div>
-
+  </div>
+</FollowerPointerCard>
+</>
 
   );
 }
