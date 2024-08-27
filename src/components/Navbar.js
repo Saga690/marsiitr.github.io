@@ -55,6 +55,9 @@ const Navbar = () => {
             <li className="item ">
               <a href="/Teams" className="c">Teams</a>
             </li>
+            <li className="item ">
+              <a href="/achievements" className="c">Achievements</a>
+            </li>
             <li>
               <div className="search-box">Blogs</div>
             </li>
