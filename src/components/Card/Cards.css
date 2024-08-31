@@ -15,6 +15,7 @@
     /* flex-wrap: wrap; */
     align-items: center;
 }
+
 /* Particles component container */
 #tsparticles {
     position: absolute;
@@ -48,7 +49,7 @@
 .vert-container span {
     cursor: pointer;
     padding: 10px 20px;
-    color: black;
+    /* color: black; */
     position: relative;
     transition: color 0.3s ease;
 }
@@ -56,8 +57,8 @@
 /* Active vertical */
 .vert-container .active {
     color: white;
-    background-color: #2F8FD2;
-    border-radius: 5px;
+    background-color: #621272;
+    border-radius: 30px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -150,9 +151,9 @@
     font-weight: 600;
 }
 
-.vert-container span:first-child {
+/* .vert-container span:first-child {
     background-color: #621272;
-}
+} */
 
 /* .gradient-text {
   background: linear-gradient(90deg, #D933A1, #9C22AA);
