@@ -1,7 +1,11 @@
 :root {
     background: linear-gradient(90deg, #100322, #350758, #430D4E);
 }
-
+.pointerdiv{
+    background-color: red;
+    width: 10px;
+    height: 10px;
+}
 .Teams {
     margin-top: 5px;
     margin-bottom: 100px;
