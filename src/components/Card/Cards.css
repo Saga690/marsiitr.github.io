@@ -1,0 +1,259 @@
+:root {
+    background: linear-gradient(90deg, #100322, #350758, #430D4E);
+}
+.pointerdiv{
+    background-color: red;
+    width: 10px;
+    height: 10px;
+}
+.Teams {
+    margin-top: 5px;
+    margin-bottom: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-items: center;
+}
+
+/* Particles component container */
+#tsparticles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Main container for the Teams section */
+.Teams {
+    padding: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Heading of the Teams section */
+.Heading h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Vertical bar container */
+.vert-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Individual verticals */
+.vert-container span {
+    cursor: pointer;
+    padding: 10px 20px;
+    /* color: black; */
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Active vertical */
+.vert-container .active {
+    color: white;
+    background-color: #621272;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Animation for the active vertical link */
+.vert-container span::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: #2F8FD2;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+/* Expanding the underline of the active link */
+.vert-container .active::before {
+    width: 100%;
+    left: 0;
+}
+
+/* Members container */
+.Members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Individual member cards */
+.cards {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.cards:hover {
+    transform: translateY(-5px);
+}
+
+/* Card images */
+.cards img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Member name styling */
+.Teams-members {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #2F8FD2;
+}
+
+/* Position or role of the member */
+.cards p {
+    font-size: 14px;
+    color: #777;
+}
+
+#tsparticles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.vert-container {
+    background-color: #100322;
+    color: whitesmoke;
+    width: 78vw;
+    padding: 10px 40px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.vert-container span {
+    cursor: pointer;
+    /* background-color: #350758; */
+    padding: 5px 14px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+/* .vert-container span:first-child {
+    background-color: #621272;
+} */
+
+/* .gradient-text {
+  background: linear-gradient(90deg, #D933A1, #9C22AA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+.Heading {
+    margin-top: 5px;
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 1.2;
+    background: linear-gradient(90deg, #548CE3, #624BCD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.Members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+    /* margin-left: 50px;
+    margin-right: 50px; */
+    max-width: 82vw;
+}
+
+.cards {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* align-items: center;
+  justify-content: center; */
+    min-width: 220px;
+    flex-wrap: wrap;
+    margin: 0px;
+    width: 18%;
+    gap: 10px;
+    /* min-width: 250px; */
+    height: 350px;
+    /* border: 0.5px solid #9C22AA; */
+    gap: 5px;
+    cursor: pointer;
+}
+
+.cards img {
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+    border-radius: 0px 10px;
+}
+
+.cards:hover img {
+    filter: none;
+    scale: 1.05;
+}
+
+/* .cards .img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: absolute;
+
+} */
+
+.cards h2 {
+    padding: 0px;
+    position: absolute;
+    padding-top: 300px;
+    margin: 10px;
+    color: white;
+    font: bold;
+
+}
+
+.cards p {
+    padding: 0px;
+    position: absolute;
+    padding-top: 280px;
+    margin: 10px;
+    color: white;
+}
+
+.cards .text {
+    padding: 0px;
+    position: relative;
+}
+
+.line {
+    background-color: rgb(194, 3, 3);
+    width: 2px;
+    height: 10px;
+}
+
+
+.Members img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}

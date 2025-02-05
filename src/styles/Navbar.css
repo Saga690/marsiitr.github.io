@@ -1,0 +1,147 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    z-index: 1000;
+}
+
+body {
+    margin-top: 92px;
+}
+
+.container {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+}
+
+.scrollednav {
+    background-color: #100322;
+    transition: background-color 0.5s ease;
+}
+
+.c {
+    color: #dbd7d5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.Left {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.Left h1 {
+    color: white;
+}
+
+.Left .logo {
+    width: 40px;
+    height: auto;
+    margin-right: 7px;
+}
+
+#navbar {
+    flex: 1;
+    list-style: none;
+    text-align: center;
+}
+
+#navbar li {
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: 17.5px;
+    cursor: pointer;
+}
+
+.c:hover {
+    color: #FFFFFF;
+}
+
+.Right {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (min-width:768px) {
+    #mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .navbar {
+        padding: 10px 3%;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        /* align-items: flex-start; */
+        align-items: center;
+        position: fixed;
+        right: -500px;
+        top: 92px;
+        width: 100%;
+        height: 100%;
+        background: #2a3239;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 15px 0 0 10px;
+        transition: right 0.3s ease;
+        background: rgba(182, 96, 182, 0.3);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(9px);
+        -webkit-backdrop-filter: blur(9px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    #navbar.active {
+        right: 0;
+    }
+
+    .Right li {
+        margin-bottom: 10px;
+    }
+
+    #mobile {
+        display: block;
+        cursor: pointer;
+        font-size: 1.7rem;
+        z-index: 1500;
+        /* Higher z-index to ensure visibility */
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i {
+        color: #fff;
+    }
+}
+
+.search-box {
+    display: flex;
+    width: 90px;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background: white;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.search-box:hover {
+    background-color: #dbd7d5;
+}
+
+.Right {
+    color: rgb(220, 220, 220);
+}
