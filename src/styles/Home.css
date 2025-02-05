@@ -33,10 +33,12 @@
   width: 100%;
   padding: 20px 0px;
   display: flex;
-  min-height: 500px;
+
+  min-height: 400px;
   justify-content: space-evenly;
   align-items: center;
-}
+  
+
 
 .left {
   max-width: 600px;
@@ -145,6 +147,15 @@ button:hover {
   .main-content h2 {
     font-size: 32px;
   }
+
+  .canvas-container {
+    display: none;
+  }
+
+  .left {
+    padding: 5px;
+    text-align: center;
+  }
 }
 
 .cards-container {
@@ -218,13 +229,16 @@ button:hover {
 
 .canvas-container {
   height: 600px;
+  margin-top: -120px;
   
 }
 
-
-@media screen and (min-width:768px) {
-  #mobile {
+@media (max-width: 768px) {  /* Adjust 768px if needed */
+  .homepage-console-head-container,
+  .homepage-console {
     display: none;
-
   }
+}
+
+
 }
