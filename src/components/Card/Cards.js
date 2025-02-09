@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Cards.css";
-import ParticlesComponent from '../particles.js';
+import ParticlesComponent from "../particles.js";
 
 const CardsDetail = [
   {
@@ -66,13 +66,34 @@ const CardsDetail = [
     titleclass: "Teams-members",
     vertical: "AI/ML",
   },
-  // Add more members as needed...
 ];
 
-const verticals = ["AI/ML", "Electronics", "Mechanical", "Web Development", "Design", "ROS", "Sponsorship", "Marketing"];
+const verticals = [
+  "AI/ML",
+  "Electronics",
+  "Mechanical",
+  "Web Development",
+  "Design",
+  "ROS",
+  "Sponsorship",
+  "Marketing",
+];
 
 function Teams() {
   const [selectedVertical, setSelectedVertical] = useState(verticals[0]);
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const [isMobileView, setMobileView] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setMobileView(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Initial check
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <>
@@ -81,21 +102,54 @@ function Teams() {
         <div className="Heading">
           <h4>Our Team</h4>
         </div>
-        <div className="verts">
-          <div className="vert-container">
-            {verticals.map((vertical, index) => (
-              <span
-                key={index}
-                className={selectedVertical === vertical ? 'active' : ''}
-                onClick={() => setSelectedVertical(vertical)}
-              >
-                {vertical}
-              </span>
-            ))}
+
+        {isMobileView ? (
+          <div className="vert-dropdown">
+            <button
+              className="dropdown-toggle"
+              onClick={() => setDropdownOpen(!isDropdownOpen)}
+            >
+              {selectedVertical} ▼
+            </button>
+            {isDropdownOpen && (
+              <div className="dropdown-menu">
+                {verticals.map((vertical, index) => (
+                  <div
+                    key={index}
+                    className={`dropdown-item ${
+                      selectedVertical === vertical ? "active" : ""
+                    }`}
+                    onClick={() => {
+                      setSelectedVertical(vertical);
+                      setDropdownOpen(false);
+                    }}
+                  >
+                    {vertical}
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
-        </div>
+        ) : (
+          <div className="verts">
+            <div className="vert-container">
+              {verticals.map((vertical, index) => (
+                <span
+                  key={index}
+                  className={selectedVertical === vertical ? "active" : ""}
+                  onClick={() => setSelectedVertical(vertical)}
+                >
+                  {vertical}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
+
         <div className="Members">
-          {CardsDetail.filter(card => card.vertical === selectedVertical).map((Card, index) => (
+          {CardsDetail.filter(
+            (card) => card.vertical === selectedVertical
+          ).map((Card, index) => (
             <div className="cards" key={index}>
               <img src={Card.background} alt="" />
               <h2 className={Card.titleclass}>{Card.name}</h2>
