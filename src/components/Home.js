@@ -6,6 +6,8 @@ import { useState, useRef } from "react";
 import ParticlesComponent from './particles.js';
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Model = () => {
   const { scene } = useGLTF("/robot1.glb");
@@ -41,23 +43,11 @@ const cardsData = [
     titleClass: 'robotics-title'
   },
   {
-    title: 'Marketing',
-    image: 'marketing.jpg',
-    description: 'The Marketing team promotes our projects and events. Members develop strategies for competitions, outreach, manage social media, and create promotional materials, enhancing their skills in communication, branding, and public relations.',
-    titleClass: 'marketing-title'
-  },
-  {
     title: 'Web Development',
     image: 'webdev.jpg',
     description: 'The Web Development team focuses on creating and maintaining our online presence. Members design and develop the club website, manage content, and ensure seamless user experience, honing their skills in web technologies and digital communication.',
     titleClass: 'robotics-title'
   },
-  {
-    title: 'Design',
-    image: 'design.jpg',
-    description: 'The Design Team focuses on creating visual content for promotional and presentation purposes. Members work on graphic design, branding, and multimedia, ensuring our projects are effectively showcased and visually appealing.',
-    titleClass: 'robotics-title'
-  }
 ];
 
 const Homepage = (props) => {
@@ -109,6 +99,20 @@ const Homepage = (props) => {
           </div>
         ))}
       </div>
+      <Carousel>
+                <div>
+                    <img src="https://earthwatcher.photo.blog/wp-content/uploads/2019/07/grand-tetons-at-twilight-from-schwabachers-landing.jpg" />
+                    
+                </div>
+                <div>
+                    <img src="https://earthwatcher.photo.blog/wp-content/uploads/2019/07/grand-tetons-at-twilight-from-schwabachers-landing.jpg" />
+                    
+                </div>
+                <div>
+                    <img src="https://earthwatcher.photo.blog/wp-content/uploads/2019/07/grand-tetons-at-twilight-from-schwabachers-landing.jpg" />
+                    
+                </div>
+      </Carousel>
     </div>
   );
 };
