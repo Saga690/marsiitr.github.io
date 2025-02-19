@@ -67,9 +67,7 @@ const Homepage = (props) => {
           <button>Our Team</button>
         </div>
 
-        {/* <div className="right">
-          <Model />
-        </div> */}
+
          <div className="canvas-container">
             <img src="/model.png" alt="Robot" className="" />
          </div>
